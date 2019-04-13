@@ -7,7 +7,7 @@ a playlists and adds it to the current user's Spotify library.
 ## Usage
 Be sure to be located in the root directory of this project.
 ### Setup
-Create a new file called `spotipy.ini`.
+Create a new file called `spotipy.ini` and with the following content.
 
 ```
 SPOTIPY_CLIENT_ID=client_id
