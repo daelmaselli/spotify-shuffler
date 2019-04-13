@@ -5,7 +5,9 @@ The Spotify playlist shuffler is a small command line tool that, as the name imp
 a playlists and adds it to the current user's Spotify library.
 
 ## Usage
-Be sure to be located in the root directory of this project.
+Create a new Spotify application on the following link: https://developer.spotify.com/dashboard/applications.
+Thereafter, open up the command line and be sure to be located in the root directory of this project.
+
 ### Setup
 Create a new file called `spotipy.ini` and give it the following content.
 
@@ -19,7 +21,7 @@ SPOTIPY_REDIRECT_URI=redirect_uri
 
 *redirect_uri* has to be set at this link aswell.
 It doesn't really matter what URI you choose. 
-*eg: https://www.spotify.com*
+*eg: https://www.spotify.com.*
 
 ### Run
 
