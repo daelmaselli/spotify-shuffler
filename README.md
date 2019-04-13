@@ -21,7 +21,7 @@ SPOTIPY_REDIRECT_URI=redirect_uri
 
 *redirect_uri* has to be accord with redirect URI you set at this same page.
 It doesn't really matter what URI you choose.  
-*For example: https://www.spotify.com.*
+For example: https://www.spotify.com.
 
 ### Run
 
