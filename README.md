@@ -24,5 +24,10 @@ export SPOTIPY_REDIRECT_URI='redirect_uri'
 *client_id*, *client_secret* can be found here: https://developer.spotify.com/dashboard/applications.
 
 *redirect_uri* has to be set at this link aswell.
-It doesn't really matter what URI you choose, as it doesn't get used in this app.
+It doesn't really matter what URI you choose. *eg: https://www.spotify.com*
+
+Next up, you are ready to run the shuffler. Be sure to be located in the root directory of this project. 
+Then enter next command:
+
+```python shuffle.py 'your_spotify_user_id' 'spotify_playlist_uri'```
 
