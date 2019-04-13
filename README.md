@@ -2,7 +2,7 @@
 
 ## What is it?
 The Spotify playlist shuffler is a small command line tool that, as the name implies, shuffles 
-a playlists and adds it's to the current user's Spotify library.
+a playlists and adds it to the current user's Spotify library.
 
 ## Usage
 First, you have to set the needed environment variables.
