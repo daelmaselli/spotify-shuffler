@@ -18,7 +18,8 @@ SPOTIPY_REDIRECT_URI=redirect_uri
 *client_id* and *client_secret* can be found here: https://developer.spotify.com/dashboard/applications.
 
 *redirect_uri* has to be set at this link aswell.
-It doesn't really matter what URI you choose. *eg: https://www.spotify.com*
+It doesn't really matter what URI you choose. 
+*eg: https://www.spotify.com*
 
 ### Run
 
