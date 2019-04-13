@@ -17,7 +17,7 @@ SPOTIPY_CLIENT_SECRET=client_secret
 SPOTIPY_REDIRECT_URI=redirect_uri
 ```
 
-*client_id* and *client_secret* can be on the Spotify page of your application.
+*client_id* and *client_secret* can be found on the Spotify page of your application.
 
 *redirect_uri* has to be set at this link aswell.
 It doesn't really matter what URI you choose. 
