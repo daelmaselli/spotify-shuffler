@@ -20,7 +20,7 @@ SPOTIPY_REDIRECT_URI=redirect_uri
 *client_id* and *client_secret* can be found on the Spotify page of your application.
 
 *redirect_uri* has to be accord with redirect URI you set at this same page.
-It doesn't really matter what URI you choose. 
+It doesn't really matter what URI you choose.  
 *For example: https://www.spotify.com.*
 
 ### Run
