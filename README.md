@@ -25,4 +25,4 @@ For example: https://www.spotify.com.
 
 ### Run
 
-```python shuffle.py 'your_spotify_user_id' 'spotify_playlist_uri'```
+```python shuffle.py 'your_spotify_user_id' 'spotify_src_playlist_uri' 'spotify_dst_playlist_uri'```
