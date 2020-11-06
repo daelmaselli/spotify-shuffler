@@ -11,8 +11,9 @@ scope = 'playlist-modify-public'
 if len(sys.argv) > 2:
     username = sys.argv[1]
     playlist_uri = sys.argv[2]
+    dst_playlist_uri = sys.argv[3]
 else:
-    print(f"Usage: {sys.argv[0]} username playlist_uri")
+    print(f"Usage: {sys.argv[0]} username src_playlist_uri dst_playlist_uri")
     sys.exit()
 
 try:
@@ -25,13 +26,12 @@ if token:
     sp = spotipy.Spotify(auth=token)
     playlist_uri_list = playlist_uri.split(':')
 
-    user = playlist_uri_list[2]
-    playlist_id = playlist_uri_list[4]
+    user = playlist_uri_list[0]
+    playlist_id = playlist_uri_list[2]
 
-    playlist = sp.user_playlist(user, playlist_id, fields=['name', 'tracks'])
-
-    playlist_name = f"{playlist['name']} - SHUFFLED"
-    new_playlist = sp.user_playlist_create(username, playlist_name)
+    dst_playlist_uri_list = dst_playlist_uri.split(':')
+    dst_user = dst_playlist_uri_list[0]
+    dst_playlist_id = dst_playlist_uri_list[2]
 
     track_uris = []
     offset = 0
@@ -51,7 +51,7 @@ if token:
 
     while True:
         to_add = track_uris[offset:offset+limit]
-        sp.user_playlist_add_tracks(username, new_playlist['id'], to_add)
+        sp.user_playlist_replace_tracks(username, dst_playlist_id, to_add)
 
         offset += limit
 
