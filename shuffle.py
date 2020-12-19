@@ -14,13 +14,13 @@ if len(sys.argv) > 2:
     dst_playlist_uri = sys.argv[-1]
 
 else:
-    print(f"Usage: {sys.argv[0]} username src_playlist_uri dst_playlist_uri")
+    print("Usage: {sys.argv[0]} username src_playlist_uri dst_playlist_uri")
     sys.exit()
 
 try:
     token = util.prompt_for_user_token(username, scope)
 except AttributeError:
-    os.remove(f".cache-{username}")
+    os.remove(".cache-{username}")
     token = util.prompt_for_user_token(username, scope)
 
 if token:
@@ -63,4 +63,4 @@ if token:
             break
 
 else:
-    print(f"Couldn't get token for {username}")
+    print("Couldn't get token for {username}")
