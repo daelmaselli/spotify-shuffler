@@ -45,6 +45,7 @@ if token:
             if len(items) != limit:
                 break
 
+    track_uris = list(set(track_uris))
     random.shuffle(track_uris)
 
     dst_playlist_uri_list = dst_playlist_uri.split(':')
